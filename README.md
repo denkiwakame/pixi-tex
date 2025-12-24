@@ -4,6 +4,9 @@
 
 [![Platforms](https://img.shields.io/badge/platforms-linux--64%20%7C%20linux--aarch64-blue)](https://pixi.sh)
 [![Tectonic](https://img.shields.io/badge/powered%20by-Tectonic-orange)](https://tectonic-typesetting.github.io/)
+[![Pixi](https://img.shields.io/badge/powered%20by-Pixi-yellow)](https://pixi.prefix.dev/latest/
+)
+[![License][license-badge]][license-url]
 
 ## 🎯 Quick Start
 
