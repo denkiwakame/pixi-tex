@@ -1,0 +1,10 @@
+[doc]
+name = "draft"
+
+[build]
+tex_dirs = ["."]
+
+[[output]]
+name = "draft"
+type = "pdf"
+

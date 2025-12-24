@@ -1,0 +1,10 @@
+.DS_Store
+.latexmkrc
+*.aux
+*.dvi
+*.fls
+*.fdb_latexmk
+*.pdf
+*.log
+*.synctex.gz
+build/*

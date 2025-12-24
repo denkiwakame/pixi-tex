@@ -1,0 +1,29 @@
+[workspace]
+authors = ["denkiwakame <denkivvakame@gmail.com>"]
+channels = ["conda-forge"]
+name = "draftpilot"
+platforms = ["linux-64", "linux-aarch64"]
+version = "0.1.0"
+
+[tasks]
+setup-jmlr = """
+wget -q https://github.com/JmlrOrg/jmlr-style-file/archive/master.tar.gz && \
+tar xzf master.tar.gz --strip-components=1 && \
+rm master.tar.gz
+"""
+
+[dependencies]
+tectonic = ">=0.15.0,<0.16"
+
+[feature.lint.dependencies]
+prek = ">=0.2.21,<0.3"
+typos = ">=1.40.0,<2"
+tex-fmt = ">=0.5.6,<0.6"
+
+[feature.lint.tasks]
+prek-install = "prek install"
+prek-uninstall = "prek uninstall"
+lint = "prek run --all-files"
+
+[environments]
+lint = { features = ["lint"] }

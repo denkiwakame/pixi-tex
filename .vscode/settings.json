@@ -1,0 +1,29 @@
+{
+  "latex-workshop.latex.recipe.default": "tectonic",
+  "latex-workshop.latex.autoBuild.run": "onSave",
+  "latex-workshop.latex.outDir": "%WORKSPACE_FOLDER%/build",
+  "latex-workshop.view.pdf.viewer": "tab",
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "tectonic",
+      "tools": ["tectonic"]
+    }
+  ],
+  "latex-workshop.latex.tools": [
+    {
+      "name": "tectonic",
+      "command": "pixi",
+      "args": [
+        "run",
+        "tectonic",
+        "--outdir",
+        "build",
+        "--keep-logs",
+        "--keep-intermediates",
+        "%DOC%.tex"
+      ],
+      "env": {}
+    }
+  ],
+  "latex-workshop.latex.autoClean.run": "onBuilt"
+}
