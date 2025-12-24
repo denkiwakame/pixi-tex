@@ -1,12 +1,9 @@
 # 🚀 pixi-tex
-
-> ⚡ Super handy Pixi + Tectonic based TeX environment
-
 [![Platforms](https://img.shields.io/badge/platforms-linux--64%20%7C%20linux--aarch64-blue)](https://pixi.sh)
 [![Tectonic](https://img.shields.io/badge/powered%20by-Tectonic-orange)](https://tectonic-typesetting.github.io/)
-[![Pixi](https://img.shields.io/badge/powered%20by-Pixi-yellow)](https://pixi.prefix.dev/latest/
-)
-[![License][license-badge]][license-url]
+[![Pixi](https://img.shields.io/badge/powered%20by-Pixi-yellow)](https://pixi.prefix.dev/latest/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-red.svg)](https://opensource.org/licenses/MIT)
+> ⚡ Super handy Pixi + Tectonic based TeX environment
 
 ## 🎯 Quick Start
 
