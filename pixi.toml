@@ -2,7 +2,7 @@
 authors = ["denkiwakame <denkivvakame@gmail.com>"]
 channels = ["conda-forge"]
 name = "draftpilot"
-platforms = ["linux-64", "linux-aarch64"]
+platforms = ["linux-64", "linux-aarch64", "osx-64", "osx-arm64"]
 version = "0.1.0"
 
 [tasks]
@@ -11,6 +11,10 @@ wget -q https://github.com/JmlrOrg/jmlr-style-file/archive/master.tar.gz && \
 tar xzf master.tar.gz --strip-components=1 && \
 rm master.tar.gz
 """
+
+[tasks.build]
+cmd = "tectonic --outdir build --keep-logs --keep-intermediates {{ tex }}"
+args = [{ arg = "tex", default = "draft.tex" }]
 
 [dependencies]
 tectonic = ">=0.15.0,<0.16"
