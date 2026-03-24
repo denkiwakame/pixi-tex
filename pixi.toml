@@ -20,6 +20,10 @@ tar xzf paper-template.tar.gz --strip-components=1 && \
 rm paper-template.tar.gz
 """
 
+[tasks.link]
+cmd = "ln -sfn .claude .cursor"
+description = "Create .cursor -> .claude symlink for Cursor compatibility"
+
 [tasks.build]
 cmd = "tectonic --outdir build --keep-logs --keep-intermediates {{ tex }}"
 args = [{ arg = "tex", default = "draft.tex" }]
